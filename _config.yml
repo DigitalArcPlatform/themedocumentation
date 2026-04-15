@@ -1,6 +1,7 @@
 title: DigitalArc Theme Documentation
 description: Technical documentation for the DigitalArc Toolkit website platform
 theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.8.2
 
 url: https://digitalarcplatform.kalanicraig.com/documentation
 
