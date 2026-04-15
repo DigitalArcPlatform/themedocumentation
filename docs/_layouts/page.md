@@ -1,3 +1,10 @@
+---
+title: page.html
+layout: default
+nav_order: 7
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/page.html`
 
 Standard content page layout — dark header band with title, then a full-width content area below.

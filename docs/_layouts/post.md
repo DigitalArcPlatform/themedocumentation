@@ -1,3 +1,10 @@
+---
+title: post.html
+layout: default
+nav_order: 8
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/post.html`
 
 Blog post layout — inherits the `page` header structure, adds a "News & Updates" label, and optionally floats a post image right of the body text.

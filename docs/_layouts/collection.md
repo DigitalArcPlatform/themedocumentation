@@ -1,3 +1,10 @@
+---
+title: collection.html
+layout: default
+nav_order: 2
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/collection.html`
 
 Collection page layout — inherits the `page` header, then conditionally renders either the blog post list or the item grid based on the page URL.

@@ -1,3 +1,10 @@
+---
+title: stories.html
+layout: default
+nav_order: 9
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/stories.html`
 
 Stories/grouped collection layout — aggregates items by `group`, renders tag-based filter buttons, and displays items under their group headings.

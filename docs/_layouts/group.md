@@ -1,6 +1,15 @@
+---
+title: group.html
+layout: default
+nav_order: 4
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/group.html`
 
 Group page layout — displays a filtered subset of items that share a `folder` value, with an optional oral history sidebar.
+
+***Currently not used***
 
 ## Role
 

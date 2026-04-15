@@ -1,3 +1,10 @@
+---
+title: Index.md
+layout: default
+nav_order: 1
+parent: Pages Folder
+---
+
 # `pages/collection.md`
 
 The exhibit collection index page — uses `layout: collection` to render the full filterable item grid.

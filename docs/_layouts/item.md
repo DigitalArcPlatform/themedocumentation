@@ -1,3 +1,10 @@
+---
+title: item.html
+layout: default
+nav_order: 6
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/item.html`
 
 Individual item page layout — two-column card with media (image, video, or audio) plus metadata, followed by full item description and a Dublin Core metadata table.

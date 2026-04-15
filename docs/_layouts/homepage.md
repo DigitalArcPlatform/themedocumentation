@@ -1,3 +1,10 @@
+---
+title: homepage.html
+layout: default
+nav_order: 5
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/homepage.html`
 
 Homepage/about layout — dark hero header with subtitle and title, then a two-column content area with site logo.

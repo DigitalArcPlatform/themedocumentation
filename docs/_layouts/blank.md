@@ -1,3 +1,10 @@
+---
+title: blank.html
+layout: default
+nav_order: 1
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/blank.html`
 
 Bare pass-through layout that outputs only `{{ content }}` with no wrapping HTML.

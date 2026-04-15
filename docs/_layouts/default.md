@@ -1,3 +1,10 @@
+---
+title: default.html
+layout: default
+nav_order: 3
+parent: "_Layouts" Folder"
+---
+
 # `_layouts/default.html`
 
 Root layout template. Wraps every page with the full HTML document structure — `<head>`, header/nav, content slot, footer, and JS bundles.
