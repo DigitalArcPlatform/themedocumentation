@@ -1,5 +1,5 @@
 ---
-title: Index.md
+title: collection.md
 layout: default
 nav_order: 1
 parent: Pages Folder
