@@ -2,7 +2,7 @@
 title: post.html
 layout: default
 nav_order: 8
-parent: "_Layouts" Folder"
+parent: "_Layouts Folder"
 ---
 
 # `_layouts/post.html`

@@ -2,7 +2,7 @@
 title: item.html
 layout: default
 nav_order: 6
-parent: "_Layouts" Folder
+parent: "_Layouts Folder"
 ---
 
 # `_layouts/item.html`

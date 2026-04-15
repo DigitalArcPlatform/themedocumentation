@@ -2,8 +2,7 @@
 title: stories.html
 layout: default
 nav_order: 9
-parent: "_Layouts" Folder"
----
+parent: "_Layouts Folder"
 
 # `_layouts/stories.html`
 
