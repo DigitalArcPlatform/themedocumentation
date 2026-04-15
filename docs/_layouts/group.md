@@ -2,7 +2,7 @@
 title: group.html
 layout: default
 nav_order: 4
-parent: "_Layouts Folder"
+parent: Layouts Folder
 ---
 
 # `_layouts/group.html`

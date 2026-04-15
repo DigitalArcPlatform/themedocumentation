@@ -2,7 +2,8 @@
 title: collection.html
 layout: default
 nav_order: 2
-parent: "_Layouts Folder"
+parent: Layouts Folder
+---
 
 # `_layouts/collection.html`
 

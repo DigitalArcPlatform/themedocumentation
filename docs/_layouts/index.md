@@ -1,5 +1,5 @@
 ---
-title: "_Layouts Folder"
+title: Layouts Folder
 layout: default
 nav_order: 2
 has_children: true
