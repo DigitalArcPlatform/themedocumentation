@@ -1,3 +1,29 @@
+---
+title: items Folder
+layout: default
+nav_order: 3
+---
+
+
+# The "_items" Folder
+
+```
+├── _items/
+│   └── YYYY-MM-DD-NNNN.md       ← item records (layout: item)
+│       example: 2019-10-01-0003.md
+```
+
+Contains files that manage the display of the objects in a collection.
+
+Any naming convention will work, and files will sort alphabetically.
+
+We generally recommend naming conventions as follows
+- for archieves: a YYYY-MM-DD-NNNN.md naming convention for date-based sorting
+- for portfolios: a NN-TITLE.md naming convention (e.g. 01-MyProject.md) to control sorting for portfolio projects.
+
+The documentation here uses the date-based archive naming convention.
+
+
 # `_items/2019-10-01-0003.md`
 
 Reference example of a complete item file — a physical object (hat) with category tags, contributor attribution, and descriptive body content.
