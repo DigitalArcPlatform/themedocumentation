@@ -31,12 +31,14 @@ Extends `page` (which extends `default`).
 
 ## Conditional Logic
 
+*Note that we've left off the curly braces and percent signs in these code loops so that they will display properly here.*
+
 ```liquid
-{% if page.url contains "blog" %}
-  {% include _postlist.html %}
-{% else %}
-  {% include _itemlist.html %}
-{% endif %}
+if page.url contains "blog"
+	include _postlist.html
+else
+	include _itemlist.html
+endif
 ```
 
 - URL contains `"blog"` → renders `_postlist.html` (blog entries from `_posts/`)
@@ -58,4 +60,4 @@ Any page with `layout: collection` in front matter:
 
 - **URL-based switch:** The `contains "blog"` check is a substring match on the full page URL. A page at `/blog-archive` would also trigger the post list. If you need stricter matching, change the condition to `page.url == "/blog/"` or use a front matter flag instead.
 - **Adding a third collection type:** To support a third collection (e.g. oral histories at `/oralhistories`), add an `elsif` branch with a new include or inline logic.
-- **Page body content:** The page's Markdown body (`{{ content }}`) is not rendered by this layout — the include takes the entire content slot. To add a description above the grid, edit the relevant include (`_itemlist.html` or `_postlist.html`) rather than the page's Markdown body.
+- **Page body content:** The page's Markdown body (`content`) is not rendered by this layout — the include takes the entire content slot. To add a description above the grid, edit the relevant include (`_itemlist.html` or `_postlist.html`) rather than the page's Markdown body.

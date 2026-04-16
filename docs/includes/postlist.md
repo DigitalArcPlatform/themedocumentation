@@ -1,3 +1,10 @@
+---
+title: postlist.html
+layout: default
+nav_order: 6
+parent: Includes Folder
+---
+
 # `_includes/_postlist.html`
 
 Renders a list of blog posts — thumbnail, title, author attribution, date, and truncated excerpt.
@@ -24,7 +31,7 @@ Included by `collection.html` when the page URL contains `"blog"`. Iterates `sit
 ## Author Lookup
 
 ```liquid
-{% assign author = site.data.authors[post.author] %}
+assign author = site.data.authors[post.author]
 ```
 
 The `post.author` value in front matter must exactly match a key in `_data/authors.yml`. If the key is not found, the author block renders without a name or link.
@@ -32,7 +39,9 @@ The `post.author` value in front matter must exactly match a key in `_data/autho
 Author website link is conditional:
 
 ```liquid
-{% if author.website %}<a href="{{ author.website }}">{{ author.name }}</a>{% endif %}
+if author.website
+	<a href=" [ author.website ] "> [ author.name ] </a>
+endif
 ```
 
 ## Includes / Inherits

@@ -34,9 +34,9 @@ Extends `page` (which extends `default`).
 ## Image Handling
 
 ```liquid
-{% if page.image %}
-  <img class="article-image float-right thumbnail" src="{{ site.baseurl }}{{ site.urlimg }}{{ page.image }}">
-{% endif %}
+if page.image
+	<img class="article-image float-right thumbnail" src="{{ site.baseurl }}{{ site.urlimg }}{{ page.image }}">
+endif
 ```
 
 The image block is suppressed entirely when `image` is blank. Image path is `site.baseurl + site.urlimg + page.image`.
@@ -44,7 +44,7 @@ The image block is suppressed entirely when `image` is blank. Image path is `sit
 ## Includes / Inherits
 
 - Inherits: `page.html` → `default.html`
-- `{{ content }}` — the post's Markdown body
+- `content` — the post's Markdown body
 
 ## Used By
 

@@ -1,3 +1,10 @@
+---
+title: itemlist.html
+layout: default
+nav_order: 5
+parent: Includes Folder
+---
+
 # `_includes/_itemlist.html`
 
 Renders the full filterable item grid — category filter buttons, optional format checkboxes, and the item card grid.
@@ -27,7 +34,7 @@ Same pattern into `uniqueFormats`. The format checkbox group is only rendered if
 
 ## Includes
 
-- `{% include _itembox.html %}` — called once per item in the grid loop
+- `include _itembox.html` — called once per item in the grid loop
 
 ## Used By
 

@@ -11,7 +11,7 @@ Root layout template. Wraps every page with the full HTML document structure —
 
 ## Role
 
-The base of the layout inheritance chain. All other layouts (except `blank`) ultimately extend `default`. Sets up the HTML document, computes copyright year variables, and assembles the three structural includes around `{{ content }}`.
+The base of the layout inheritance chain. All other layouts (except `blank`) ultimately extend `default`. Sets up the HTML document, computes copyright year variables, and assembles the three structural includes around `content`.
 
 ## Front Matter
 
@@ -30,8 +30,8 @@ These are captured inside `default.html` and made available to child includes (`
 
 | Variable | Computed As | Purpose |
 |---|---|---|
-| `SiteYear` | `{% capture SiteYear %}{{ timestamp | date: "%Y" }}{% endcapture %}` | Launch year extracted from `site.sitedate` |
-| `NowYear` | `{% capture NowYear %}{{ site.time | date: '%Y' }}{% endcapture %}` | Current build year |
+| `SiteYear` | `capture SiteYear` and then print `timestamp | date: "%Y"`  | Launch year extracted from `site.sitedate` |
+| `NowYear` | `capture NowYear` and then print `site.time | date: '%Y'` | Current build year |
 
 ## Includes
 
@@ -39,7 +39,7 @@ In order:
 
 1. `_head.html` — inside `<head>`
 2. `_header-and-nav.html` — top of `<body>`
-3. `{{ content }}` — rendered output of the child layout or page
+3. `content` — rendered output of the child layout or page
 4. `_footer.html` — end of page content
 5. JS scripts — jQuery, what-input, Foundation JS, `app.js` (all from `site.baseurl/assets/js/`)
 

@@ -7,7 +7,7 @@ parent: Layouts Folder
 
 # `_layouts/blank.html`
 
-Bare pass-through layout that outputs only `{{ content }}` with no wrapping HTML.
+Bare pass-through layout that outputs only `content` with no wrapping HTML.
 
 ## Role
 

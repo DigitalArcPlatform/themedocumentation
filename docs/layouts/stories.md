@@ -36,12 +36,12 @@ Two passes over `site.items`:
 
 **Pass 1 — Build group and tag lists:**
 ```liquid
-{% for item in site.items %}
-  {% if item.group %}
-    {% unless grouplist contains item.group %}...{% endunless %}
+\{\% for item in site.items \%\}
+  \{\% if item.group \%\}
+    \{\% unless grouplist contains item.group \%\}...\{\% endunless \%\}
     ...collect uniquetags from item.categories...
-  {% endif %}
-{% endfor %}
+  \{\% endif \%\}
+\{\% endfor \%\}
 ```
 
 Produces:
@@ -55,7 +55,7 @@ Produces:
 ## Includes / Inherits
 
 - Inherits: `page.html` → `default.html`
-- `{% include _itembox.html %}` — called inside nested group + item loops
+- `\{\% include _itembox.html \%\}` — called inside nested group + item loops
 
 ## Used By
 

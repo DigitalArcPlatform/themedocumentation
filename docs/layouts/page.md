@@ -32,7 +32,7 @@ Extends `default`. Sets `format: page` for potential CSS targeting.
 ## Includes / Inherits
 
 - Inherits: `default.html` (provides `<head>`, nav, footer, JS)
-- `{{ content }}` — rendered body of the child layout or page
+- `content` — rendered body of the child layout or page
 
 ## Layout Chain Position
 

@@ -9,7 +9,7 @@ parent: Layouts Folder
 
 Group page layout — displays a filtered subset of items that share a `folder` value, with an optional oral history sidebar.
 
-***Currently not used***
+***2026-04: Currently not in use. Here to prepare for v2 launch***
 
 ## Role
 
@@ -38,15 +38,19 @@ Extends `page` (which extends `default`).
 
 ## Layout Logic
 
-1. `{% assign oralhistory = site.oralhistories | where: "folder", page.folder | first %}` — finds the first oral history with a matching `folder` value
+1. `assign oralhistory = site.oralhistories | where: "folder", page.folder | first` — finds the first oral history with a matching `folder` value
 2. If an oral history with an excerpt exists: renders a two-column layout (items + sidebar)
 3. If no oral history: renders items in a single-column layout
-4. Items loop: `{% for item in site.items %}{% if item.itemdescendant == page.folder %}` — includes `_itembox.html` for each match
-
+4. Items loop:
+```
+for item in site.items
+	if item.itemdescendant == page.folder
+		include `_itembox.html` for each match
+```
 ## Includes / Inherits
 
 - Inherits: `page.html` → `default.html`
-- `{% include _itembox.html %}` — called inside the items loop (note: called as `itembox.html` without underscore prefix in some versions; verify actual filename)
+- `include _itembox.html` — called inside the items loop
 
 ## Used By
 

@@ -11,7 +11,7 @@ Homepage/about layout — dark hero header with subtitle and title, then a two-c
 
 ## Role
 
-Designed for the main landing page of a site using this theme. Renders a dark hero band with `site.subtitle` and `site.title`, then a two-column Foundation grid: the left column holds the page's Markdown content (`{{ content }}`); the right column displays the site logo image. An email address is optionally shown at the bottom of the content column.
+Designed for the main landing page of a site using this theme. Renders a dark hero band with `site.subtitle` and `site.title`, then a two-column Foundation grid: the left column holds the page's Markdown content (`content`); the right column displays the site logo image. An email address is optionally shown at the bottom of the content column.
 
 ## Front Matter
 
@@ -46,7 +46,7 @@ The two-column split uses Foundation's `medium-8` / `medium-4` grid. On small sc
 ## Includes / Inherits
 
 - Inherits: `default.html`
-- `{{ content }}` — the page's Markdown body, rendered in the left column
+- `content` — the page's Markdown body, rendered in the left column
 
 ## Used By
 

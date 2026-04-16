@@ -1,3 +1,10 @@
+---
+title: navigation.yml
+layout: default
+nav_order: 2
+parent: Data Folder
+---
+
 # `_data/navigation.yml`
 
 Defines the main navigation menu items rendered by `_header-and-nav.html`.
@@ -38,7 +45,9 @@ Internal links (root-relative paths) get `site.baseurl` prepended automatically.
 `_header-and-nav.html` marks the current page active with:
 
 ```liquid
-{% if page.url == nav.url %} active{% endif %}
+if page.url == nav.url
+	active
+endif
 ```
 
 This is an exact string comparison. The `url` value in this file must exactly match the `permalink` defined in the target page's front matter.

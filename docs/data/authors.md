@@ -1,3 +1,11 @@
+---
+title: authors.yml
+layout: default
+nav_order: 1
+parent: Data Folder
+---
+
+
 # `_data/authors.yml`
 
 Maps author keys to author profile data, used to display attribution on blog post list entries.

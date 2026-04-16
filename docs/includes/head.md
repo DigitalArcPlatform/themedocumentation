@@ -1,3 +1,10 @@
+---
+title: head.html
+layout: default
+nav_order: 2
+parent: Includes Folder
+---
+
 # `_includes/_head.html`
 
 Renders the full `<head>` block — meta tags, CSS, JS, analytics, and SEO — included in every page via `default.html`.
@@ -23,7 +30,7 @@ Included once at the top of `default.html`. Everything that belongs in `<head>` 
 
 ## External Dependencies
 
-- `main.css` at `{{ site.baseurl }}/assets/css/main.css`
+- `main.css` at ` [ site.baseurl ] /assets/css/main.css`
 - Font Awesome kit loaded from `https://kit.fontawesome.com/3f7330d0fa.js`
 - Google Analytics 4 script (conditional on `site.google_g4_analytics_id`)
 

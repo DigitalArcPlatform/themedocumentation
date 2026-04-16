@@ -1,10 +1,17 @@
+---
+title: footer.html
+layout: default
+nav_order: 1
+parent: Includes Folder
+---
+
 # `_includes/_footer.html`
 
 Renders the site footer — social media links, logo, description, copyright year range, license badge, and framework attribution.
 
 ## Role
 
-Included at the bottom of `default.html`, after `{{ content }}` and before the JS `<script>` blocks. Visible on every page that uses the `default` layout chain.
+Included at the bottom of `default.html`, after `content` and before the JS `<script>` blocks. Visible on every page that uses the `default` layout chain.
 
 ## Variables Used
 
@@ -27,7 +34,7 @@ Included at the bottom of `default.html`, after `{{ content }}` and before the J
 
 ## Copyright Year Logic
 
-`SiteYear` and `NowYear` are captured in `default.html` using `{% capture %}`. The footer conditionally displays a year range:
+`SiteYear` and `NowYear` are captured in `default.html` using `capture`. The footer conditionally displays a year range:
 
 - If `SiteYear != NowYear`: renders `SiteYear – NowYear`
 - If equal (launch year = current year): renders only `NowYear`

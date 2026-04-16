@@ -42,9 +42,7 @@ Extends `page` (which extends `default`).
 
 ## Item ID Extraction
 
-```liquid
-{% capture FileName %}{{ page.url | split: '/' | last }}{% endcapture %}
-```
+Liquid: `capture FileName` then print `page.url | split: '/' | last`
 
 The filename (e.g. `2019-10-01-0003`) becomes `ItemID`, used to search `site.static_files` for matching assets.
 
@@ -60,12 +58,12 @@ Media is displayed in the left column in this priority order:
 ## Dublin Core Metadata Table
 
 ```liquid
-{% for key in site.data.metadata.fields %}
-  {% assign value = page[key[0]] %}
-  {% if value %}
-    <tr><td>{{ key[1] }}</td><td>{{ value }}</td></tr>
-  {% endif %}
-{% endfor %}
+for key in site.data.metadata.fields
+	assign value = page[key[0]]
+		if value
+    		<tr><td>[key[1]]</td><td> [value]</td></tr>
+		endif
+endfor
 ```
 
 Iterates `_data/metadata.yml`'s `fields` map. For each field, reads the matching `page` variable by key. Rows with blank values are suppressed.

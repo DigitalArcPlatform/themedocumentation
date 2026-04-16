@@ -1,7 +1,7 @@
 ---
-title: items Folder
+title: Items Folder
 layout: default
-nav_order: 3
+nav_order: 4
 ---
 
 
@@ -89,7 +89,7 @@ teammember: Andy Floyd
 
 ## Body Content Structure
 
-The item body (below front matter) is rendered as `{{ content }}` in `item.html` after the two-column card. Convention used in this example:
+The item body (below front matter) is rendered as `content` in `item.html` after the two-column card. Convention used in this example:
 
 ```markdown
 ## About This Item

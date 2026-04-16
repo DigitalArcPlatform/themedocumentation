@@ -1,3 +1,10 @@
+---
+title: metadata.yml
+layout: default
+nav_order: 2
+parent: Data Folder
+---
+
 # `_data/metadata.yml`
 
 Maps item front matter field names to human-readable display labels for the Dublin Core metadata table on item pages.
@@ -34,7 +41,7 @@ fields:
 {% for key in site.data.metadata.fields %}
   {% assign value = page[key[0]] %}
   {% if value %}
-    <tr><td>{{ key[1] }}</td><td>{{ value }}</td></tr>
+    <tr><td> [ key[1] ] </td><td> [ value ] </td></tr>
   {% endif %}
 {% endfor %}
 ```

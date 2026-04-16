@@ -1,3 +1,10 @@
+---
+title: itembox.html
+layout: default
+nav_order: 4
+parent: Includes Folder
+---
+
 # `_includes/_itembox.html`
 
 Renders a single item as a card thumbnail — image, title, contributor, short description, and filter data attributes.
@@ -37,9 +44,7 @@ Images are resolved in this order:
 
 ## Item ID Extraction
 
-```liquid
-{% capture FileName %}{{ item.url | split: '/' | last }}{% endcapture %}
-```
+Liquid: `capture FileName` and then print `[ item.url | split: '/' | last ]`
 
 The filename (e.g. `2019-10-01-0003`) becomes the `ItemID` used when searching `site.static_files` for a matching image.
 

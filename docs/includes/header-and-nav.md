@@ -1,3 +1,10 @@
+---
+title: header-and-nav.html
+layout: default
+nav_order: 3
+parent: Includes Folder
+---
+
 # `_includes/_header-and-nav.html`
 
 Renders the sticky top navigation bar — site title, mobile menu toggle, and data-driven nav links with active-state detection.
@@ -34,5 +41,5 @@ None.
 - **Nav items:** Edit `_data/navigation.yml` to add, remove, or reorder links. No changes to this file needed.
 - **External links:** Any `url` starting with `http` automatically opens in a new tab.
 - **Active state logic:** If you change a page's `permalink`, update the matching `url` in `navigation.yml` or the active indicator will break.
-- **Mobile title:** The mobile bar shows `site.title`. To display a logo image instead, replace the `<span>` containing `{{ site.title }}` with an `<img>` tag.
+- **Mobile title:** The mobile bar shows `site.title`. To display a logo image instead, replace the `<span>` containing ` [ site.title ] ` with an `<img>` tag.
 - **Foundation version:** The sticky/off-canvas markup is Foundation 6-specific. Upgrading Foundation requires reviewing this file for breaking markup changes.
