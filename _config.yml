@@ -3,7 +3,7 @@ description: Technical documentation for the DigitalArc Toolkit website platform
 theme: just-the-docs
 remote_theme: just-the-docs/just-the-docs@v0.8.2
 
-url: https://digitalarcplatform.kalanicraig.com/documentation
+url: https://digitalarcplatform.github.io/themedocumentation
 
 aux_links:
   DigitalArc Theme: https://digitalarcplatform.kalanicraig.com
@@ -15,13 +15,13 @@ color_scheme: light
 # URL will usually be blank. Entering something here allows you to control whether links use a full URL or not
 url: 
 # Base URL will be blank if the documentation is not in a subfolder of your web site. If the documentation will be in a folder (site.com/documentation/) instead of in its own main site (site.github.io) add that folder name here with a slash / in front of it (e.g. /docs) but not after.
-baseurl: /digitalarcthemedocs
+baseurl: /themedocumentation
 # This lets you specify where most images are stored without having to manually type each image url. Use ""{{site.url}}{{site.baseurl}}/filename.html" to link to files and "{{site.url}}{{site.baseurl}}{{site.imageurl}}/imagename.jpg" to link to images.
 imageurl: /assets/images
 gifurl: /assets/videos
 
 #Github Repository
-repository: kalanicraig/digitalarcthemedocs
+repository: digitalarcplatform/themedocumentation
 
 #Search Configuration
 search_enabled: true
